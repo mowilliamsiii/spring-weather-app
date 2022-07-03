@@ -11,13 +11,13 @@
 
         <div>
             <h1>Weather Conditions</h1>
-            <p th:text="${weather.description}">Description</p>
+            <p th:text="${weather.getDescription()}">Description</p>
             <h2>Temperature</h2>
-            <p th:text="${weather.temperature} + ' &#8457;'">Temperature</p>
+            <p th:text="${weather.getTemperature()}">Temperature</p>
             <h2>Feels Like</h2>
-            <p th:text="${weather.feelsLike} + ' &#8457;'">Feels Like</p>
+            <p th:text="${weather.getFeelsLike()}">Feels Like</p>
             <h2>Wind Speed</h2>
-            <p th:text="${weather.windSpeed} + ' mph'"></p>
+            <p th:text="${weather.getWindSpeed()}"></p>
         </div>
 
     </body>
